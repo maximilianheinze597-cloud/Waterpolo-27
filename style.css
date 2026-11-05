@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#0a182b;color:#e8eef8;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow:hidden}
+#cv{position:fixed;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 30%,rgba(20,70,140,.75),rgba(5,12,25,.94));z-index:5;padding:16px;overflow:auto}
+.overlay.hidden{display:none}
+.card{background:rgba(12,24,45,.96);border:1px solid #27446f;border-radius:16px;padding:24px 28px;max-width:560px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.card.wide{max-width:760px;max-height:90vh;overflow:auto}
+h1{margin:0 0 4px;font-size:30px}h2{margin:0 0 12px}
+.sub{margin:0 0 18px;color:#9fb4d3;font-size:14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:#9fb4d3;text-transform:uppercase;letter-spacing:.05em}
+select{background:#12284a;color:#fff;border:1px solid #2d4d7d;border-radius:8px;padding:9px;font-size:14px}
+button{background:#17325c;color:#fff;border:1px solid #2d4d7d;border-radius:10px;padding:11px 18px;font-size:15px;cursor:pointer}
+button:hover{background:#1f4380}
+button.primary{background:#1e8f4e;border-color:#2fb86a;font-weight:700}
+button.primary:hover{background:#25ab5d}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.hint{color:#7d93b5;font-size:12px;margin:14px 0 0}
+#preview{display:flex;justify-content:center;gap:18px;margin-top:16px;align-items:center}
+.cap{width:44px;height:44px;border-radius:50%;border:2px solid #000;display:flex;align-items:center;justify-content:center;font-weight:800;position:relative;overflow:hidden}
+.pv{text-align:center;font-size:12px;color:#9fb4d3}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:7px 8px;border-bottom:1px solid #1d3558;vertical-align:top}td:first-child{white-space:nowrap;font-weight:700;color:#ffd166;width:34%}
+.bigscore{font-size:54px;font-weight:800;text-align:center;margin:8px 0}
+.stat{display:grid;grid-template-columns:1fr auto 1fr;gap:6px;text-align:center;padding:5px 0;border-bottom:1px solid #1d3558}

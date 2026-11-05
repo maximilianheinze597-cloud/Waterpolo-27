@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wasserball Arena</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="cv"></canvas>
+
+<div id="menu" class="overlay">
+  <div class="card">
+    <h1>🤽 Wasserball Arena</h1>
+    <p class="sub">Vollständiges Wasserballspiel mit Regeln, Schiedsrichtern, Strafwurf und Penaltyschießen</p>
+    <div class="grid">
+      <label>Dein Team<select id="selHome"></select></label>
+      <label>Gegner<select id="selAway"></select></label>
+      <label>Kappenfarbe<select id="selCap"></select></label>
+      <label>Kappen-Design<select id="selStyle"></select></label>
+      <label>Schwierigkeit<select id="selDiff"></select></label>
+      <label>Viertel-Länge<select id="selLen"></select></label>
+    </div>
+    <div id="preview"></div>
+    <div class="btns">
+      <button id="btnStart" class="primary">▶ Spiel starten</button>
+      <button id="btnRules">📖 Regeln</button>
+      <button id="btnControls">🎮 Steuerung</button>
+    </div>
+    <p class="hint">Heim spielt in Weiß/Farbe, Gast in Blau, Torhüter immer in Rot (Nr. 1 und 13).</p>
+  </div>
+</div>
+
+<div id="info" class="overlay hidden"><div class="card wide"><h2 id="infoTitle"></h2><div id="infoBody"></div><div class="btns"><button id="btnInfoClose" class="primary">Zurück</button></div></div></div>
+
+<div id="pause" class="overlay hidden"><div class="card">
+  <h2>⏸ Pause</h2>
+  <div class="btns"><button id="btnResume" class="primary">Weiter</button><button id="btnSound">🔊 Ton an</button><button id="btnQuit">Zum Menü</button></div>
+</div></div>
+
+<div id="result" class="overlay hidden"><div class="card wide">
+  <h2 id="resTitle"></h2><div id="resScore" class="bigscore"></div><div id="resStats"></div>
+  <div class="btns"><button id="btnAgain" class="primary">Nochmal</button><button id="btnMenu">Menü</button></div>
+</div></div>
+
+<script src="js/util.js"></script>
+<script src="js/config.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/game.js"></script>
+<script src="js/physics.js"></script>
+<script src="js/flow.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/render.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
